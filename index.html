@@ -1,0 +1,185 @@
+<!-- i use the prettier extension -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Open+Sans:wght@300&family=Roboto:ital,wght@0,100;0,300;1,100&display=swap"
+      rel="stylesheet"
+    />
+    <title>HCI ASSIGNMENT-02</title>
+  </head>
+  <body>
+    <h1>Biodata Form</h1>
+    <form action="index2.html" target="_blank">
+      <div class="names">
+        <label for="fname" required>First name:</label><br />
+        <input
+          type="text"
+          id="fname"
+          name="fname"
+          placeholder="First name"
+          required
+        /><br />
+        <label for="fname">Second name:</label><br />
+        <input
+          type="text"
+          id="sname"
+          name="sname"
+          placeholder="Second name"
+          required
+        /><br />
+        <label for="fname">Third name: (optional)</label><br />
+        <input
+          type="text"
+          id="tname"
+          name="tname"
+          placeholder="Third name"
+        /><br />
+        <label for="fname">Fourth name: (optional)</label><br />
+        <input
+          type="text"
+          id="foname"
+          name="foname"
+          placeholder="Fourth name"
+        /><br />
+      </div>
+
+      <fieldset>
+        <label for="gender">Gender: </label>
+        <div class="genderr">
+          <div id="malee">
+            <input type="radio" name="Male" id="male" /><label
+              id="male"
+              for="male"
+              >Male</label
+            >
+          </div>
+
+          <div id="malee">
+            <input type="radio" name="female" id="female" /><label
+              id="female"
+              for="female"
+              >Female</label
+            >
+          </div>
+        </div>
+      </fieldset>
+
+      <label for="telling">Tell us something about yourself: </label>
+      <textarea
+        name="tell"
+        id="tell"
+        cols="30"
+        rows="10"
+        placeholder="Tell us something about yourself"
+        required
+      >
+      </textarea>
+
+      <label for="programming-skills"
+        >Check the boxes of your programming skills</label
+      >
+      <div class="skills">
+        <input type="checkbox" /> <label>React JS</label>
+        <input type="checkbox" /> <label>JavaScript</label>
+        <input type="checkbox" /> <label>CSS</label> <input type="checkbox" />
+        <label>HTML</label> <input type="checkbox" /> <label>C++</label>
+        <input type="checkbox" /> <label>Python</label>
+        <input type="checkbox" /> <label>C</label>
+      </div>
+
+      <div class="clas">
+        <label for="clas">Which class are you from: </label>
+        <select name="clas" id="clas">
+          <option value="">Select your class</option>
+          <option value="">L1AC</option>
+          <option value="">L1BC</option>
+          <option value="">L1CC</option>
+        </select>
+      </div>
+
+      <div class="age">
+        <label for="age">What's your age</label>
+        <select name="age" id="age">
+          <option value="">Select your age</option>
+          <option value="">16</option>
+          <option value="">17</option>
+          <option value="">18</option>
+          <option value="">19</option>
+          <option value="">20</option>
+        </select>
+      </div>
+
+      <div class="country">
+        <label for="country">Where are you from</label>
+        <select name="country" id="country">
+          <option value="">Select an option</option>
+          <option value="">Indonesia</option>
+          <option value="">Japan</option>
+          <option value="">America</option>
+        </select>
+      </div>
+
+      <div class="birth">
+        <label for="birthdate">Date of birth: </label>
+        <input type="date" />
+      </div>
+
+      <div class="last-buttons">
+        <input type="reset" name="reset" id="reset" value="Reset" />
+        <input type="submit" value="Submit" />
+      </div>
+    </form>
+
+    <br />
+    <br />
+
+    <h1>Schedule</h1>
+    <table>
+      <tr>
+        <th>Class</th>
+        <th colspan="2">Teacher</th>
+        <th>Teacher Assistant</th>
+      </tr>
+      <tr>
+        <td rowspan="2">L1BC</td>
+        <td>Prof. Bagus</td>
+        <td>Mr. Jude</td>
+        <td rowspan="2">Michael Bengawan</td>
+      </tr>
+      <tr>
+        <td>Mr. Faustinus</td>
+        <td>Mr. Raymond</td>
+      </tr>
+
+      <tr>
+        <td rowspan="2">L1AC</td>
+        <td>Prof. Bagus</td>
+        <td>Mr. Jude</td>
+        <td rowspan="2">Francesco Emmanuel</td>
+      </tr>
+      <tr>
+        <td>Mr. Faustinus</td>
+        <td>Mr. Raymond</td>
+      </tr>
+
+      <tr>
+        <td rowspan="2">L1BC</td>
+        <td>Prof. Bagus</td>
+        <td>Mr. Jude</td>
+        <td rowspan="2">Alya</td>
+      </tr>
+      <tr>
+        <td>Mr. Faustinus</td>
+        <td>Mr. Raymond</td>
+      </tr>
+    </table>
+
+    <script src="script.js"></script>
+  </body>
+</html>

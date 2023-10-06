@@ -1,0 +1,56 @@
+#malee{
+    display: flex;
+    flex-direction: row;
+    margin: 0%;
+}
+* {
+    margin: 5px;
+    font-family: "Roboto";
+}
+body {
+    background-image: url(images/background-image.jpg);
+    background-size: cover; 
+}
+h1{
+    text-align: center;
+}
+script{
+    display: none;
+}
+head{
+    display: none;
+}
+.names{
+    display: flex;
+    flex-direction: row;
+}
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+input {
+    margin-bottom: 15px;
+    text-align: center;
+}
+.genderr {
+    display: flex;
+    flex-direction: row;
+}
+button,a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#yay {
+    text-align: center;
+}
+table, th,td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
